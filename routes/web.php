@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ClassSetupController;
 use App\Http\Controllers\ParentsController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\TeacherController;
@@ -25,10 +26,22 @@ Route::get('/', function () {
 Auth::routes();
 
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+/**
+ * Admin All Route Start
+ */
 
 // Admin Controller Route Start
 Route::get('/home',[AdminController::class,'index'])->name('admin');
 // Admin Controller Route End
+
+//ClassSetup Controller Route Start
+Route::resource('classSetup', ClassSetupController::class);
+Route::get('/classSetup/{id}/delete',[ClassSetupController::class,'delete'])->name('classSetup.delete');
+//ClassSetup Controller Route End
+
+/**
+ * Admin All Route End
+ */
 
 
 // Teacher Controller Route Start
