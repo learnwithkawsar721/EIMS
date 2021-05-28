@@ -283,7 +283,7 @@
                                     <a href="{{ route('classSetup.index') }}" class="nav-link"><i class="fas fa-angle-right"></i>Class Setup</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="teacher-details.html" class="nav-link"><i
+                                    <a href="{{ route('subjectsetup.index') }}" class="nav-link"><i
                                             class="fas fa-angle-right"></i>Subject Setup</a>
                                 </li>
                                 <li class="nav-item">

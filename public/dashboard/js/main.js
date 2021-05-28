@@ -81,7 +81,7 @@
         paging: true,
         searching: true,
         info: true,
-        lengthChange: false,
+        lengthChange: true,
         lengthMenu: [10,20, 50, 75, 100,150,200],
         columnDefs: [{
           targets: [0, -1], // column or columns numbers
