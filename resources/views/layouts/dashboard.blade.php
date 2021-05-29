@@ -287,7 +287,7 @@
                                             class="fas fa-angle-right"></i>Subject Setup</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="add-teacher.html" class="nav-link"><i class="fas fa-angle-right"></i>Section Setup</a>
+                                    <a href="{{ route('sectionSetup.index') }}" class="nav-link"><i class="fas fa-angle-right"></i>Section Setup</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="teacher-payment.html" class="nav-link"><i
