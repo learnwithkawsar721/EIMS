@@ -17,12 +17,12 @@
 @section('dashboard')
     <!-- Breadcubs Area Start Here -->
     <div class="breadcrumbs-area">
-        <h3>Subject Setup</h3>
+        <h3>Expenses Setup</h3>
         <ul>
             <li>
                 <a href="{{ route('admin') }}">Home</a>
             </li>
-            <li>Subject SetUp</li>
+            <li>Expenses SetUp</li>
         </ul>
     </div>
     <!-- Breadcubs Area End Here -->
@@ -31,8 +31,8 @@
         <div class="card-body">
             <div class="heading-layout1">
                 <div class="item-title">
-                    <h3>All Subject
-                        <a href="{{ route('subjectsetup.create') }}"
+                    <h3>All Expenses 
+                        <a href="{{ route('expensessetup.create') }}"
                             class="btn-fill-lg bg-blue-dark btn-hover-yellow add_button"><i class="fa fa-plus"></i> Add</a>
                     </h3>
                 </div>
@@ -44,20 +44,18 @@
                     <thead>
                         <tr>
                             <th>#ID</th>
-                            <th>Subject Name</th>
-                            <th>Subject Code</th>
+                            <th>Expenses Name</th>
                             <th>Created Date</th>
                             <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($all_Subject as $item)
+                        @foreach ($all_expenses as $item)
 
                             <tr>
 
                                 <td>{{ $loop->index + 1 }}</td>
-                                <td>{{ $item->subject_name }}</td>
-                                <td>{{ $item->subject_code }}</td>
+                                <td>{{ $item->expenses_name }}</td>
                                 <td>
                                     @if ($item->updated_at)
                                         {{ $item->updated_at->diffForHumans() }}
@@ -66,9 +64,9 @@
                                     @endif
                                 </td>
                                 <td>
-                                    <button value="{{ route('subjectsetup.edit', $item->id) }}"
+                                    <button value="{{ route('expensessetup.edit', $item->id) }}"
                                         class="btn-fill-md text-light bg-dodger-blue btn-hover-bluedark add_button edit_submit_btn">Edit</button>
-                                    <button value="{{ route('subjectsetup.delete',$item->id) }}" class="btn-fill-md radius-4 text-light bg-orange-red btn-hover-bluedark add_button delete_btn">Delete</button>
+                                    <button value="{{ route('expensessetup.delete',$item->id) }}" class="btn-fill-md radius-4 text-light bg-orange-red btn-hover-bluedark add_button delete_btn">Delete</button>
                                 </td>
                             </tr>
                         @endforeach

@@ -31,7 +31,7 @@
         <div class="card-body">
             <div class="heading-layout1">
                 <div class="item-title">
-                    <h3>All Class
+                    <h3>All Session
                         <a href="{{ route('sessionsetup.create') }}"
                             class="btn-fill-lg bg-blue-dark btn-hover-yellow add_button"><i class="fa fa-plus"></i> Add</a>
                     </h3>

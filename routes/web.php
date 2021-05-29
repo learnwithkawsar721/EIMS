@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ClassSetupController;
+use App\Http\Controllers\ExpensesSetUpController;
 use App\Http\Controllers\ParentsController;
 use App\Http\Controllers\SectionSetupController;
 use App\Http\Controllers\SessionSetUpController;
@@ -56,6 +57,11 @@ Route::get('/sectionSetup/{id}/delete',[SectionSetupController::class,'delete'])
 Route::resource('sessionsetup',SessionSetUpController::class);
 Route::get('/sessionsetup/{id}/delete',[SessionSetUpController::class,'delete'])->name('sessionsetup.delete');
 //SessionSetUp Controller Route End
+
+//ExpensesSetUp Controller Route Start
+Route::resource('expensessetup', ExpensesSetUpController::class);
+Route::get('/expensessetup/{id}/delete',[ExpensesSetUpController::class,'delete'])->name('expensessetup.delete');
+//ExpensesSetUp Controller Route End
 
 /**
  * Admin All Route End

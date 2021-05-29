@@ -295,7 +295,7 @@
                                             class="fas fa-angle-right"></i>Session Setup</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="teacher-payment.html" class="nav-link"><i
+                                    <a href="{{ route('expensessetup.index') }}" class="nav-link"><i
                                             class="fas fa-angle-right"></i>Expanse Setup</a>
                                 </li>
                             </ul>
