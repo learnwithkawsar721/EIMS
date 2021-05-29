@@ -289,13 +289,14 @@
                                 <li class="nav-item">
                                     <a href="{{ route('sectionSetup.index') }}" class="nav-link"><i class="fas fa-angle-right"></i>Section Setup</a>
                                 </li>
+
                                 <li class="nav-item">
-                                    <a href="teacher-payment.html" class="nav-link"><i
-                                            class="fas fa-angle-right"></i>Expanse Setup</a>
+                                    <a href="{{ route('sessionsetup.index') }}" class="nav-link"><i
+                                            class="fas fa-angle-right"></i>Session Setup</a>
                                 </li>
                                 <li class="nav-item">
                                     <a href="teacher-payment.html" class="nav-link"><i
-                                            class="fas fa-angle-right"></i>Session Setup</a>
+                                            class="fas fa-angle-right"></i>Expanse Setup</a>
                                 </li>
                             </ul>
                         </li>

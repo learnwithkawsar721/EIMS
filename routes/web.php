@@ -4,6 +4,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ClassSetupController;
 use App\Http\Controllers\ParentsController;
 use App\Http\Controllers\SectionSetupController;
+use App\Http\Controllers\SessionSetUpController;
 use App\Http\Controllers\StudentController;
 use App\Http\Controllers\SubjectStupController;
 use App\Http\Controllers\TeacherController;
@@ -50,6 +51,11 @@ Route::get('/subjectsetup/{id}/delete',[SubjectStupController::class,'delete'])-
 Route::resource('sectionSetup',SectionSetupController::class);
 Route::get('/sectionSetup/{id}/delete',[SectionSetupController::class,'delete'])->name('sectionSetup.delete');
 //SectionSetup Controller Route End
+
+//SessionSetUp Controller Route Start
+Route::resource('sessionsetup',SessionSetUpController::class);
+Route::get('/sessionsetup/{id}/delete',[SessionSetUpController::class,'delete'])->name('sessionsetup.delete');
+//SessionSetUp Controller Route End
 
 /**
  * Admin All Route End
